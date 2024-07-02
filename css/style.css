@@ -1,0 +1,152 @@
+/* figtree-SemiBold - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/Figtree-SemiBold.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* figtree-ExtraBold - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/Figtree-ExtraBold.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Figtree', sans-serif;
+  font-weight: 500;
+  background-color: #F4D04E;
+  color: #7F7F7F;
+}
+
+.card {
+  width: 384px;
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 20px;
+  border: 1px solid #111111;
+  box-shadow: 7px 7px 0px #111111;
+}
+
+.card__img {
+  border-radius: 10px;
+  width: 336px;
+  height: 200px;
+  margin-bottom: 24px;
+}
+
+.card__content {}
+
+.card__content-btn {
+  border: none;
+  padding: 4px 12px;
+  font-size: 14px;
+  font-weight: 800;
+  border-radius: 4px;
+  line-height: 150%;
+  color: #111111;
+  background-color: #F4D04E;
+  margin-bottom: 12px;
+}
+
+.card__content-text {
+  color: #111111;
+  font-weight: 600;
+  line-height: 150%;
+  margin-bottom: 12px;
+}
+
+.card__content-title {
+  color: #111111;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 150%;
+  margin-bottom: 12px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.card__content-title:hover {
+  color: #F4D04E;
+}
+
+.card__content-desc {
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.card__avatar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.card__avatar-img {
+  height: 32px;
+  width: 32px;
+}
+
+.card__avatar-title {
+  font-size: 14px;
+  color: #111111;
+  line-height: 150%;
+  font-weight: 800;
+}
+
+@media (max-width: 425px) {
+  body {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .card {
+    width: 327px;
+  }
+
+  .card__img {
+    width: 279px;
+  }
+
+  .card__content-btn {
+    font-size: 12px;
+  }
+
+  .card__content-text {
+    font-size: 12px;
+  }
+
+  .card__content-title {
+    font-size: 20px;
+  }
+
+  .card__content-desc {
+    font-size: 14px;
+  }
+}
